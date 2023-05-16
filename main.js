@@ -52,3 +52,21 @@ function object1(point) {
     return point.x;
 }
 console.log(object1(p));
+var arrayFor = [
+    { id: 1, name: 'Muthu', age: 20 },
+    { id: 2, name: 'Saroo', age: 22 },
+    { id: 3, name: 'Marudhu', age: 22 },
+    { id: 4, name: 'Thangam', age: 20 },
+];
+var x = arrayFor.filter(function (e) {
+    return e.age > 20;
+});
+console.log(x);
+var Greeter = /** @class */ (function () {
+    function Greeter() {
+    }
+    Greeter.prototype.greet = function () { };
+    return Greeter;
+}());
+this.greeting = message;
+return "helo " + this.greeting;
