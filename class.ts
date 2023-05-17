@@ -1,5 +1,6 @@
 
 export { }
+import {Engine} from "./classEngine"
 
 //class variable and methods
 
@@ -60,34 +61,31 @@ export { }
 
 //Inheritance
 
-// class Engine{
-//     constructor(public name:string,public horsePower:number){}
-// }
 
-// let e=new Engine("Audi",55);
 
-// class Auto{
-//     engine:Engine;
+class Auto{
+    engine:Engine;
         
-//     constructor(engine:Engine) {
-//         this.engine=engine
-//         console.log(this.engine,"hhjjhj");
+    constructor(engine:Engine) {
+        this.engine=engine
+        console.log(this.engine,"hhjjhj");
         
-//     }
-//     getHp(){
-//         return this.engine.horsePower
-//     }
-// }
+    }
+    getHp(){
+        return this.engine.horsePower
+    }
+}
 
-// class Truck extends Auto{
-//     constructor(public bool:boolean,engine:Engine){
-//         super(engine)
-//         console.log(this.bool,this.engine.horsePower);
-//     }
+class Truck extends Auto{
+    constructor(public bool:boolean,engine:Engine){
+        super(engine)
+        console.log(this.bool,this.engine.horsePower);
+    }
 
-// }
-// let truc=new Truck(true,e)
-// console.log(truc.getHp());
+}
+let e=new Engine("Audi",55);
+let truc=new Truck(true,e)
+console.log(truc.getHp());
 
 // interface
 
