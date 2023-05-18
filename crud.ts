@@ -60,6 +60,8 @@ class Crud implements IStudent {
         // this.users.push(user)
         // return "User Added Successfully  " + JSON.stringify(this.users)
     }
+
+    //json.stringyfy and json.parse
     edit(id: number, updatedUser) {
         // let {username,email,messages,}=updatedUser;
         // fetch(`http://localhost:4000/updateById/${id} `, {
